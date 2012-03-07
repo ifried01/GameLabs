@@ -291,14 +291,12 @@ while True:
             if paddle_rect1.colliderect(ball) and ball_scored == False:
                 ball_speed[0] = -ball_speed[0]
                 
-                ball_hit = load_sound("pong_sound.wav")
                 ball_hit.play()
     
             # Test if the ball is hit by the paddle2; if yes reverse speed
             if paddle_rect2.colliderect(ball) and ball_scored == False:
                 ball_speed[0] = -ball_speed[0]
                 
-                ball_hit = load_sound("pong_sound.wav")
                 ball_hit.play()
     
             # Clear screen
